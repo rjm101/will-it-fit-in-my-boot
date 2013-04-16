@@ -1,0 +1,25 @@
+{% include "header.html" %}
+	<link rel="stylesheet" type="text/css" href="/static/css/user_scenario_sidebar.css?v={{build_version}}">
+	<link rel="stylesheet" type="text/css" href="/static/css/argos/argos_sidebar.css?v={{build_version}}">
+</head>
+<body>
+	{% include "modal/modal.html" %}
+
+	{% include "sidebar/sidebar.html" %}
+
+	<div id="page_wrapper">
+		<div id="page_header"></div>
+		<div id="page_container_top"></div>
+
+		<div id="page_container_middle">
+			<div id="reserve_container">
+				<a href="#" class="fit_in_car_btn" data-id="">Will this fit in my car?</a>
+			</div>
+		</div>
+
+		<div id="page_container_bottom"></div>
+	</div>
+
+{% include "footer.html" %}
+</body>
+</html>

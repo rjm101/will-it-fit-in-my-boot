@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/* SPRITE */
+	.sprite{background-image: url(../../images/argos/will_this_fit/argos_sprite.png);}
+
+/* PRELOADER */
+	#loader{background-image: url(../../images/argos/will_this_fit/ajax-loader.gif);}
+
+/* SIDE BAR */ 
+	#sidebar_wrapper{
+		background-color: #3AC1DA;
+		box-shadow: 3px 0 3px rgba(0, 0, 0, 0.2);
+	}
+
+	.sidebar_content{background-color: #3ac1da;}
+
+	.sidebar_content hr{border-top: 1px solid #64d1e5;}
+
+	p .answer{color: white;}
+
+	.message_container{color: white;}
+
+	.answer{color: white;}
+
+/* SIDEBAR ICONS */
+	#yes_icon{
+		width: 64px;
+		height: 64px;
+		background-position: -178px -33px;
+		float: left;
+	}
+
+	#maybe_icon{
+		width: 53px;
+		height: 61px;
+		background-position: -58px -33px;
+		float: left;
+	}
+
+	#no_icon{
+		width: 65px;
+		height: 65px;
+		float: left;
+		background-position: -112px -33px;
+	}
+
+/* ENTER CAR REGISTRATION FORM */
+	#my_reg_form input{
+	 	border: 2px solid #DCDCDC;
+	    border-radius: 4px;
+	    font-size: 24px;
+	    font-weight: bold;
+	}
+
+	#my_reg_form input:focus{border: 2px solid #09B2D1;}
+
+	#my_reg_form button{
+		background-color: #09b2d1;
+	    border: none;
+	    border-radius: 4px;
+	    color: white;
+	    font-size: 16px;
+	    font-weight: bold;
+	}
+
+	#my_reg_form button:hover{background-color: #00c7eb;}
+
+	#select_make_model div label{
+		color: #7C7C7C;
+	    font-size: 14px;
+	}
+
+	h3, #select_make_model label{
+		font-family: Arial, Helvetica, sans-serif;
+		color: #09b2d1;
+	}
+
+/* PIE DIAGRAM */
+	.pieContainer{background-color: #49cee7;}
+
+	#pie_center{
+		background-color: #007c91;
+		color: white;
+	}
+
+	#no_canvas{color: white;}
+
+/* PANEL HEADER */
+	#panel_header{
+		background-image: url(../../images/homebase/will_this_fit/header_bg.gif);
+		border-top: 1px solid #5ccce1;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+
+		background: #0da9c5; /* Old browsers */
+		background: -moz-linear-gradient(top,  #08b2d0 0%, #11a1bb 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#08b2d0), color-stop(100%,#11a1bb)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #08b2d0 0%,#11a1bb 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #08b2d0 0%,#11a1bb 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #08b2d0 0%,#11a1bb 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #08b2d0 0%,#11a1bb 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08b2d0', endColorstr='#11a1bb',GradientType=0 ); /* IE6-9 */
+	}
+
+	#panel_heading{
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 18px;
+		text-shadow: 0 1px 2px #008ea8;
+	}
+	
+	#close{background-position: -27px -33px;}
+
+	#close:hover{background-position: -27px -65px;}
+
+/* CONTENT SUB HEADER */
+	#table_header{
+		color:#09b2d1;
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+	}
+
+/* CAR PRODUCT LIST */
+	#item_list li h3{color: #09b2d1;}
+
+/* BOOT SIZES TABLE */
+	.size_table{color: #736355;}
+
+	.to{background-color: #f5f5f5;}
+
+	.size_table caption{
+		color: #662e00;
+		font-weight: bold;
+		font-size: 14px;
+		text-align: left;
+	}
+
+/* BUTTONS */
+	.panel_btn, .std_btn{
+		background-color: white;
+		border-radius: 5px;
+		margin-right:15px;
+		border: 1px solid #d2d2d2;
+		color: #333333;
+	}
+
+	.std_btn{
+		background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f7f7f7)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ffffff 0%,#f7f7f7 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
+	}
+
+	.std_btn:hover{
+		background-color: white;
+		color: black;
+	}
+
+	.start_again_btn{
+		background-color: #09b2d1;
+		border: 1px solid #00849c;
+		box-shadow: 
+			inset 0 -1px 3px rgba(0,0,0, 0.3), 
+  			inset 0 1px 3px rgba(255,255,255, 0.8);
+		border-radius: 5px;
+		color: white;
+		padding: 8px 0 8px 0;
+		text-align: center;
+	}
+
+	.start_again_btn:hover{background-color: #00cdf2;}
+
+	.orange_btn, #orange_style_btn{
+		background-color: #e52b22;
+		border: 1px solid #c11911;
+		box-shadow: 
+			inset 0 -1px 3px rgba(0,0,0, 0.3), 
+  			inset 0 1px 3px rgba(255,255,255, 0.8);
+		border-radius: 5px;
+		color: white;
+		text-align: center;
+	}
+
+	.orange_btn{
+		padding: 8px 44px 8px 28px;
+		background-image: url(../../images/homebase/will_this_fit/homebase_sprite.png);
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+
+	.orange_btn:hover, #orange_style_btn:hover{
+		background-color: #f00b00;
+		color: white;
+	}
+
+	.book_for_delivery{color: #ffe26e;}
+
+	.book_for_delivery:hover{text-decoration: underline;}
+
+/* PANEL FOOTER: LIST RELATED CARS */
+	#related_cars_wrapper{
+		border-top: 1px solid #CCCCCC;
+		background-color: #f5f5f5;
+		color: #09b2d1;
+	}
+
+	#related_matches{color: #333;}

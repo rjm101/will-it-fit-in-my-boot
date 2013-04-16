@@ -1,0 +1,7 @@
+cron:
+- description: Product Collection
+  url: /cron/product-collection
+  schedule: every monday 07:50
+- description: Product Detail Collection
+  url: /cron/product-detail-collection
+  schedule: every monday 08:20

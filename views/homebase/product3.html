@@ -1,0 +1,62 @@
+{% include "header.html" %}
+    <style type="text/css">#content_area{display: block;}</style>
+</head>
+<body>
+	{% include "modal.html" %}
+
+	<!--PAGE STARTS-->
+	<div id="page_container_top" class="container"></div>
+	
+    <!--MAIN CONTENT AREA-->
+    <div id="page_container_middle" class="container">
+    	<div id="content_area">
+    			    		
+	    		<div id="left_col">
+		    		<div id="reserve_info">
+			    		<img src="/static/images/homebase/check_reserve_availability_icon.gif" alt="Check Reserve">
+			    		<p>Your products will be available for collection <strong>3 hours after <br>placing your reservation</strong> and held until the store closes on <br><strong>13th March</strong>.</p>
+		    		</div>
+		    		
+		    		<table id="items_to_reserve">
+		            <tr>
+		              <td class="details">
+		                  <img src="/static/images/homebase/products/lamp_table.jpg" alt="Product Name" class="product_item">
+		                  <p>
+		                      <span class="p_title">Wiltshire Lamp Table Oak</span><br>
+		                      <span class="price">£99.99</span><br>
+		                      <span class="p_no">Product no. 005939</span><br>
+		                      <!--WILL THIS FIT IN MY CAR?!-->
+		                      <a href="javascript:void(0);" class="fit_in_car_btn" data-id="2">Will this fit in my boot?</a><br>
+		                      <a href="#" class="remove_product">remove this item</a>
+		                  </p>
+		              </td>
+		              <td class="quantity">
+		              	Quantity <br>Required
+						<form class="dropdown">
+		                     <select id="quantity_0" name="quantity_0">
+		                        <option selected="selected">1</option>
+		                        <option>2</option>
+		                        <option>3</option>
+		                        <option>4</option>
+		                        <option>5</option>
+		                        <option>6</option>
+		                        <option>7</option>
+		                        <option>8</option>
+		                        <option>9</option>
+		                        <option>10</option>
+		                     </select>
+		                 </form>
+		                 <a href="#" class="remove">Remove</a>
+		              </td>
+		              <td class="price_col">
+							<p>£399.99</p>
+		              </td>
+		          </table>
+	          </div>
+	          <!--FAKE RIGHT COL VISUAL HERE -->
+	          <div id="available_places"></div>
+        </div>
+    </div>
+{% include "footer.html" %}
+</body>
+</html>

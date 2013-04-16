@@ -1,0 +1,406 @@
+@charset "UTF-8";
+/* SPRITE */
+	.sprite{background-repeat: no-repeat;}
+
+/* MAIN CONTAINERS */
+#content_wrapper{
+	width: 551px;
+	float: right;
+}
+
+/* PRELOADER */
+	#loader{
+		width: 64px;
+		height: 64px;
+		margin-left: -32px;
+		margin-top:85px;
+		background-repeat: no-repeat;
+		position: relative;
+		left: 50%;
+		display: none;
+	}
+
+/* OVERLAY MODAL PANEL */
+	.overlay{
+		background-image: url(../../images/will_this_fit/overlay_bg.png);
+		position:absolute;
+	    top:0;
+	    bottom:0;
+	    left:0;
+	    right:0;
+	    overflow:hidden;
+	    z-index:10;   
+		display: none;
+	}
+
+	.overlay:hover{cursor: pointer;}
+
+/* PANEL */
+	.panel{
+		width: 550px;
+		background-color: white;
+		min-height: 180px;
+		position: absolute;
+		left: 50%;
+		top: 90px;
+		margin-left: -279px;
+		z-index: 12;
+		display: none;
+		box-shadow: 0 4px 50px black;
+		overflow: hidden;
+	}
+
+/* PANEL HEADER */
+	#panel_header{
+		background-repeat: repeat-x;
+		float: left;
+		height: 53px;
+		width: 100%;
+	}
+
+	#panel_heading{margin-top: 17px;}
+
+	#close{
+		width: 30px;
+		height: 30px;
+		background-repeat: no-repeat;
+		margin: 12px 12px 0 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+/* GENERIC BTN */
+	.panel_btn, .std_btn{
+		color: white;
+		padding: 8px 25px 8px 25px;
+		float:left;
+		display: block;
+	}
+
+	.orange_btn{
+		margin-right:15px;
+		float: left;
+	}
+
+	.start_again_btn{
+		width:100%;
+		float:left;
+	}
+
+/* ENTER CAR REGISTRATION FORM */
+	#car_reg_form{
+		float: left;
+		width: 92%;
+		padding: 4%;
+	}
+
+	#my_reg_form{
+		float:left;
+		width: 100%;
+		margin-top: 15px;
+		margin-bottom: 10px;
+
+		/*FOR IE*/
+		display: inline;
+	}
+
+	#car_reg_form hr{
+		float: left;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	#my_reg_form input{
+	    padding: 8px 0;
+	    position: relative;
+	    top: -2px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    margin-right: 1%;
+	    width: 79%;
+	    float:left;
+	}
+
+	#my_reg_form button{
+	    padding: 13px 0;
+	    width: 18%;
+	    float:right;
+	}
+
+	#my_reg_form button:hover{cursor: pointer;}
+
+	#make_col, #model_col{
+		width: 45%;
+		float: left;
+	}
+
+	#make_col{margin-right: 5%;}
+
+	#model_col{margin-left: 5%;}
+
+	#car_make, #model{width: 100%;}
+
+	#select_make_model div label{
+	    margin-top:15px;
+	    margin-bottom:10px;
+	}
+
+	h3, #select_make_model label{
+		margin-top: 10px;
+		display: block;
+	}
+
+/* NOTIFICATION */
+	.notification{
+		width: 95%;
+		padding: 1% 2% 2% 2%;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 5px;
+		margin-top: 10px;
+		display: none;
+		font-size: 14px;
+	}
+
+	#error{
+		border-color: #d25454;
+		color: #b63737;
+		background-color: #facbc4;
+	}
+
+	.notification img{
+		margin-right: 4px;
+	    position: relative;
+	    top: 4px;
+	}
+
+/* SIDEBAR */
+	#sidebar_wrapper{
+		width: 221px;
+		height: 1000px;
+		float: left;
+		position: absolute;
+		z-index: 1;
+		display: none;
+	}
+
+/* SIDEBAR CONTENT */
+	.message_container{
+		font-size: 14px;
+		font-weight: bold;
+		margin-top: 15px;
+		line-height: 20px;
+	}
+
+	.sidebar_content{
+		float: left;
+		width: 74%;
+		height: 74%;
+		z-index: 0;
+		padding: 13%;
+	}
+
+	.sidebar_content p{margin: 0 0 10px 0;}
+
+	.sidebar_content .maybe_btn_wrapper{
+		margin-top: 39px;
+		width: 100%;
+	}
+
+	.sidebar_content .no_btn_wrapper{margin-top: 71px;}
+
+	div .answer{
+		font-size: 48px;
+		font-weight: bold;
+		position: relative;
+		top:15px;
+	}
+
+	.sidebar_content .sub_title{margin-top: 32px;}
+
+	#maybe_answer{
+		font-size: 30px;
+		margin-top:10px;
+		position: Relative;
+		top: 18px;
+	}
+
+	.result_icon{margin-right: 8px;}
+
+	.sidebar_content div, .sidebar_content p, .sidebar_content hr{
+		float:left;
+		width:100%;
+	}
+
+	.sidebar_content .yes_start_again{margin-top: 20px;}
+
+/* MY CAR PANEL */
+	#your_car .product{
+		float: left;
+		margin: 10px 10px 10px 35px;
+		height: 80px;
+	}
+
+	#bs_container{margin-top: 8px;}
+
+	#boot_size{
+		color: #717171;
+		font-size: 12px;
+		margin-top: 10px;
+	}
+
+	#package_dimensions{margin-top: 10px;}
+
+	#your_car{display: none;}
+
+	#product_sizes{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		color: #333333;
+	}
+
+	#package_dimensions{
+		color: black;
+		font-size: 16px;
+		font-weight: normal;
+	}
+
+	#your_car img{float: left;}
+
+	#car_match{
+		width: 100%;
+		float: left;
+	}
+
+	#button_container{
+		float: left; 
+		padding: 28px 0 28px 5%;
+		width: 95%;
+	}
+
+/* PRODUCT AND CAR LIST */
+	#table_header{
+		color: white;
+		padding: 15px 0px 15px 5%;
+		float: left;
+		width: 95%;
+	}
+
+	#item_list{
+		float:left;
+		width: 100%;
+	}
+
+	#item_list li{
+		float: left;
+		list-style: none;
+		border-bottom: 1px solid #e3e3e3;
+		width:100%;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.thumb_wrapper{
+		float:left;
+		margin: 10px 20px 10px 10px;
+		width:140px;
+	}
+
+	.thumb_wrapper img{height: 100px;}
+
+	#item_list li h3{
+		display: block;
+		margin-top:30px;
+		padding-right: 15px;
+		float: left;
+		width: 30%;
+	}
+
+	#item_list li .product_title{margin-top:45px;}
+
+	.no_item_list li h3{width: 170px;}
+
+	#car_name{
+		font-size: 16px;
+		color: #5b5344;
+		text-transform:capitalize;
+		display: block;
+		margin-top:10px;
+	}
+
+	#car{
+		max-width: 140px;
+		margin-right: 0;
+	}
+
+/* MATCH SCORE PIE CHART */
+	.pieContainer {
+		position: relative;
+		float: left;
+		height: 185px;
+		width: 100%;
+	}
+
+	#canvas{
+		margin: 27px auto auto auto;
+		display: block;
+	}
+
+	#pie_center{
+		border-radius: 50%;
+		position: absolute;
+		width: 82px;
+		height: 82px;
+		left: 50%;
+		margin-left: -43px;
+	    margin-top: -41px;
+		top: 50%;
+		z-index: 3;
+		font-size: 12px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	#pie_center p{margin-top: 26px;}
+
+	#match_percent{
+		font-size: 19px;
+		margin-top:5px;
+		display: block;
+	}
+
+	#no_canvas{
+		margin: 75px 20px 0 20px;
+		text-align: center;
+	}
+
+/* BOOT SIZES TABLE */
+	.size_table{
+		float: right;
+		width: 35%;
+		height: 86px;
+		border: none;
+		font-weight: normal;
+		font-size: 12px;
+	}
+
+	.size_table caption{padding: 7px;}
+	
+	.col{width: 30%;}
+	
+	.size_table tr td{
+		vertical-align: middle;
+		padding-left: 10px;
+	}
+
+/* FOOTER LIST RELATED CARS */
+	#related_cars_wrapper{
+		float: left;
+		width: 100%;
+		text-align: center;
+		padding-top:11px;
+		padding-bottom: 11px;
+	}
+
+	#related_matches{color: #7b7b7b;}

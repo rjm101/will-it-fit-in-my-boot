@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* USER SCENARIO SIDE BAR */
+#product_menu_box{
+	background-color: white;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+body .slide_menu_box{left: -210px;}
+
+#slide_arrow{
+	background-color: #f4f4f4;
+	background-image: url(../../images/argos/sidebar/slide_arrows.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+/* PRODUCT LIST */
+#product_select_box{
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;	
+}
+
+#product_title_container{
+	text-align: center;
+	background-color: #3ac1da;
+	color: white;
+}
+
+#product_title_container a{color: white;}
+
+#product_select_box ul li a{
+	color: #333333;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#product_select_box ul li:hover{background-color: #f3f3f3;}
+
+.product_thumb{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #cfcfcf;
+}
+
+/* SELECT CAR REGISTRATION */
+#car_regs{color: #66bd2b;}
+
+#car_regs #reg_nos li a{
+	text-align: center;
+	color: #333;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	background-color: #EAEAEA;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+}

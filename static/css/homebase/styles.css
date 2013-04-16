@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* CSS DOCUMENT */
+html{
+	min-height:100%;
+	position:relative;
+}
+
+body{
+	height:100%; 
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a{text-decoration: none;}
+
+#page_container_top{
+	height: 203px;	
+	background-image: url(../../images/homebase/Homebase_header.png);
+}
+
+#page_container_middle{
+	background-image: url(../../images/homebase/Homebase_page_middle.png);
+	min-height: 100px;
+	background-repeat: repeat-y;
+	float: left;
+}
+
+#page_container_bottom{
+	background-image: url(../../images/homebase/Homebase_footer.png);
+	height: 720px;
+}
+
+.container{
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin: auto;
+	float: left;
+	min-width: 1024px;
+}
+
+/* MAIN CONTAINER AREA */
+#content_area{
+	width: 950px;
+	margin: auto;
+	min-height: 100px;
+	display: none;
+}
+
+#items_to_reserve{width: 100%;}
+
+#items_to_reserve tr td{
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px;
+	border-bottom: 1px solid #E2E0DD;
+	color: #4D3D3E;
+	font-size: 11px;
+	font-weight: bold;
+	border: 1px solid #E2E0DD;
+}
+
+#items_to_reserve .details{
+	color: #4D3D3E;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#items_to_reserve tr .details{width: 32.1%;}
+#items_to_reserve tr .quantity{width: 9.3%;}
+#items_to_reserve tr .price_col{width: 8%;}
+#items_to_reserve tr .place{width: 16.63%;}		
+#items_to_reserve tr .selected_col{width: 16.1%;}	
+
+.price_col p{text-align: center;}
+
+.remove{
+	text-decoration: underline;
+	color: #4D3D3E;
+	font-size: 11px;
+}
+
+.dropdown select{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.price{
+	font-size: 13px;
+	font-weight: bold;
+	color: #4D3D3E;
+}
+
+.p_title{text-decoration: underline;}
+
+.p_no{
+	color: #4D3D3E;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+#reserve_info{
+	width: 446px;
+	height: 68px;
+	float: left;
+	border: 1px solid #e2e0dd;
+	background-color: #f8f7f7;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4D3D3E;
+	margin-bottom: 10px;
+}
+
+#reserve_info p{
+	margin: 10px;
+	line-height: 16px;
+	font-weight: normal;
+	text-align: left;
+}
+
+#reserve_info img{float: left;}
+
+.price{color: #00A000;}
+
+.selected_col{
+	background-color:#E5F5E5;
+	border-left: 2px solid #01A001;
+	border-right: 2px solid #01A001;
+}
+
+.product_item{
+	width: 110px;
+	height: 110px;
+	float: left;
+	margin-right:10px;
+}
+
+.fit_in_car_btn{
+	width: 131px;
+	height: 10px;
+	float: left;
+	font-size: 11px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: white;
+	background-color: #00a000;
+	background-image: url(../../images/homebase/fit_btn.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.remove_product{
+	font-weight: normal;
+	text-align: right;
+	float: right;
+	text-decoration: underline;
+	margin-top: 10px;
+	color: #4D3D3E;
+}
+
+/* AVAILABLE PLACES */
+#available_places{
+	width: 473px;
+	height: 352px;
+	background-image: url(../../images/homebase/delivery_options.gif);
+	background-repeat: no-repeat;
+	float: right;
+}
+
+table {
+    float: left;
+    width: 100%;
+    height: 170px;
+}
+
+#left_col{
+	width: 50.2%;
+	float: left;
+}
+
+#items_to_reserve tr .details{width: 280px;}
+#items_to_reserve tr .quantity{width: auto;}
+#items_to_reserve tr .price_col{width: auto;}
+
+#reserve_info{margin-top: 32px;}

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* USER SCENARIO SIDE BAR */
+#product_menu_box{
+	background-color: white;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+	background-image: url(../../images/homebase/sidebar/gradient.jpg);
+	background-repeat: repeat-x;
+	background-position: left 12px;
+}
+
+body .slide_menu_box{left: -210px;}
+
+#slide_arrow{
+	background-color: #f4f4f4;
+	background-image: url(../../images/homebase/sidebar/slide_arrows.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+/* PRODUCT LIST */
+#product_select_box{
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;	
+	background-image: url(../../images/homebase/sidebar/gradient.jpg);
+	background-repeat: repeat-x;
+	background-position: left 12px;
+}
+
+#product_title_container{
+	text-align: center;
+	background-color: #00a000;
+	color: white;
+}
+
+#product_title_container a{color: white;}
+
+#product_select_box ul li a{
+	color: #333333;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#product_select_box ul li:hover{background-color: #f3f3f3;}
+
+.product_thumb{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #cfcfcf;
+}
+
+/* SELECT CAR REGISTRATION */
+#car_regs{color: #66bd2b;}
+
+#car_regs #reg_nos li a{
+	text-align: center;
+	color: white;
+	background-color: #50b849;
+	border-radius: 3px;
+}

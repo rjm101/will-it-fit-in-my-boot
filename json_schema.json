@@ -1,0 +1,42 @@
+/*
+*	Products
+*/
+{
+	"response": "Products",
+
+	"data": 
+		[
+			{
+				"category": "Bedside and Chest of Drawers", 
+				"department":"Furniture",
+				"name": " hana 9 drawer chest", 
+				"created": 1361986839, 
+				"colour": "red", 
+				"image_small": "http://media.habitat.co.uk/pws/client/images/catalogue/products/160936/small/160936.jpg", 
+				"image_medium": "http://media.habitat.co.uk/pws/client/images/catalogue/products/160936/medium/160936.jpg", 
+				"image_large": "http://media.habitat.co.uk/pws/client/images/catalogue/products/160936/large/160936.jpg", 
+				"last_modified": 1361986839, 
+				"type": "king size", 
+				"price": 800.0, 
+				"description": null,
+				"url":"http://www.habitat.co.uk/lora-white-birch-kingsize-bed/beds//fcp-product/177054"
+			},
+			more...
+		]
+}
+
+
+/*
+*	Navigation
+*/
+
+{
+	"Furniture":[
+		"Beds",
+		"Chairs"
+	],
+	"Lighting":[
+		"Lamps",
+		"Bulbs"
+	]
+}

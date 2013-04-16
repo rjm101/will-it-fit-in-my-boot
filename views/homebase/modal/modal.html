@@ -1,0 +1,216 @@
+<!--OVERLAY PANELS-->
+<div class="overlay"></div>
+
+<!--PANELS-->
+<div class="panel">
+	<!--SIDE BAR-->
+	<div id="sidebar_wrapper">
+
+		<!--YES HEADER-->
+		<div id="yes_wrapper" class="result_wrapper">
+			<div class="pieContainer">
+				<div id="pie_center">
+					<p>Car Match<br><span id="match_percent"></span></p>
+				</div>
+				<canvas id="canvas" width="135" height="135">
+					<p id="no_canvas">Your browser does not support HTML5 Canvas.</p>
+				</canvas>
+			</div>
+
+			<div class="sidebar_content">
+				<div>
+					<div class="result_icon sprite" id="yes_icon"></div>
+					<span class="answer">Yes</span>
+				</div>
+
+				<hr>
+
+				<p class="message_container">The car data returned suggests this product will fit</p>
+
+				<p class="yes_start_again">
+					<a href="javascript:void(0);" class="panel_btn start_again_btn">Start again</a>
+				</p>
+			</div>
+		</div>
+
+		<!--MAYBE HEADER-->
+		<div id="maybe_wrapper" class="result_wrapper">
+			<div class="sidebar_content">
+				<div class="sub_title">
+					<div class="result_icon sprite" id="maybe_icon"></div>
+					<span class="answer" id="maybe_answer">Maybe</span>
+				</div>
+
+				<hr>
+				
+				<p class="message_container">
+					The car data returned suggests this product may or may not fit due to tight car boot and product dimensions. 
+				</p>
+
+				<p class="message_container">
+					To be safe, why not <a href="#" class="book_for_delivery">book for home delivery</a> instead?
+				</p>
+
+				<p class="maybe_btn_wrapper">
+					<a href="javascript:void(0);" class="panel_btn start_again_btn">Start again</a>
+				</p>
+			</div>
+		</div>
+
+		<!--NO HEADER -->
+		<div id="no_wrapper" class="result_wrapper">
+			<div class="sidebar_content">
+				<p class="sub_title">
+					<div class="result_icon sprite" id="no_icon"></div>
+					<span class="answer">No</span>
+				</p>
+				
+				<hr>
+
+				<p class="message_container">
+					The car data returned suggests this product will not fit. 
+				</p>
+				
+				<p class="message_container">
+					Why not <a href="#" class="book_for_delivery">book for home delivery</a> instead?
+				</p>
+				
+				<p class="no_btn_wrapper">
+					<a href="javascript:void(0);" class="panel_btn start_again_btn" id="orange_style_btn">Start again</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!--CONTENT AREA-->
+	<div id="content_wrapper">
+		<!--CONTENT AREA HEADER-->
+		<div id="panel_header">
+			<h2 id="panel_heading">Will it fit in my boot?</h2>
+			<a href="#" id="close" class="sprite"></a>
+		</div>
+		
+		<!--PRE LOADER-->
+		<div id="loader"></div>
+		
+		<!--FILL IN YOUR CAR REGISTRATION-->
+		<div class="content_area" id="car_reg_form"  style="display:none;">
+			
+			<!--ENTER CAR REG FORM -->
+			<h3>Enter Car Registration</h3>
+			<!--ERROR-->
+			<div class="notification" id="error">
+				<img src="/static/images/will_this_fit/alert.gif" alt="error"> 
+				<span id="error_message"></span>
+			</div>
+			
+			<!--CAR REG FORM -->
+			<form id="my_reg_form" onsubmit="return false">
+				<input type="text" id="car_reg" required>
+				<button type="submit" value="search">Search</button>
+			</form>
+			
+			<hr>
+			
+			<h3>Or Select Make and Model</h3>
+			<form id="select_make_model">
+				<div id="make_col">
+					<label>Select Make</label>
+	                <select id="car_make" name="">
+	                    <option selected="selected">Ford</option>
+	                    <option>Audi</option>
+	                    <option>BMW</option>
+	                    <option>Chrysler</option>
+	                    <option>Citroen</option>
+	                    <option>Dodge</option>
+	                    <option>Honda</option>
+	                    <option>Jaguar</option>
+	                    <option>Kia</option>
+	                    <option>Land Rover</option>
+	                    <option>Lexus</option>
+	                    <option>Morgan</option>
+	                    <option>Nissan</option>
+	                    <option>VW</option>
+	                    <option>Volvo</option>
+	                </select>
+				</div>
+				<div id="model_col">
+					<label>Select Car Model</label>
+					<select id="model" name="">
+						<option selected="selected">Ford Fiesta</option>
+					</select>
+				</div>
+	        </form>
+		</div>
+		
+		<!--YOUR CAR DIMENSIONS--> 
+		<div class="content_area" id="your_car">
+
+			<div id="table_header">Compare your car boot and product size</div>
+
+			<ul id="item_list">
+				<li>
+					<div class="thumb_wrapper">
+						<img src="" alt="product name" id="panel_product" class="product">
+					</div>
+					<h3 class="product_title">Product Item Name</h3>
+
+					<table class="size_table" id="product_size">
+						<caption>Packaged Size (cm)</caption>
+						<colgroup>
+						    <col span="1">
+							<col class="col">
+						</colgroup>
+						<tr>
+							<td>Length:</td>
+							<td id="p_length"></td>
+						</tr>
+						<tr class="to">
+							<td>Width:</td>
+							<td id="p_width"></td>
+						</tr>
+						<tr>
+							<td>Height:</td>
+							<td id="p_height"></td>
+						</tr>
+					</table>
+				</li>
+				
+				<li>
+					<div class="thumb_wrapper">
+						<img src="/static/images/cars/2061111101338.jpg" alt="" id="car">
+					</div>
+					<div id="car_info">
+						<h3>My Car: <br><span id="car_name">My car name</span></h3>
+					</div>
+
+					<table class="size_table" id="car_boot_size">
+						<caption>Boot Size (cm)</caption>
+						<colgroup>
+						    <col span="1">
+						    <col class="col">
+					 	</colgroup>
+						<tr>
+							<td>Opening width:</td>
+							<td id="ow"></td></tr>
+						<tr class="to">
+							<td>Opening height:</td>
+							<td id="oh"></td></tr>
+						<tr>
+							<td>Depth:</td>
+							<td id="d"></td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+
+			<!--BUTTON CONTAINER-->
+			<div id="button_container">
+				<a href="http://www.homebase.co.uk" id="click_and_collect" class="std_btn">Collect in store</a>
+				<a href="http://www.homebase.co.uk" id="add_to_trolley" class="std_btn">Book for delivery</a>
+			</div>
+			
+			<div id="related_cars_wrapper">Not your car? <a href="#" id="related_matches">List related matches</a></div>
+		</div>
+	</div>
+</div>

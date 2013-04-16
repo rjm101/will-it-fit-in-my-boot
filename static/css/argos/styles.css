@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS DOCUMENT */
+html{
+	min-height:100%;
+	position:relative;
+}
+
+body{
+	height:100%; 
+	font-family: Arial, Helvetica, sans-serif;
+	min-width: 970px;
+	background-image: url(../../images/argos/header_wrapper_bg.gif);
+	background-repeat: repeat-x;
+}
+
+a{text-decoration: none;}
+
+/* PAGE CONTAINERS */
+	#page_wrapper{
+		width: 970px;
+		margin: auto;
+	}
+
+	#page_header{
+		background-image: url(../../images/argos/header_bg.png);
+		background-repeat: no-repeat;
+		width: 970px;
+		margin: auto;
+		height: 135px;
+	}
+
+	#page_container_top{
+		width: 970px;
+		height: 354px;
+		background-repeat: no-repeat;
+	}
+
+	#page_container_middle{width: 970px;}
+
+	#page_container_bottom{
+		width: 970px;
+		background-repeat: no-repeat;
+	}
+
+/* PRODUCTS */
+	.product1_top{background-image: url(../../images/argos/product_pages/product1-top.png);}
+
+	.product2_top{background-image: url(../../images/argos/product_pages/product2-top.png);}
+
+	.product3_top{background-image: url(../../images/argos/product_pages/product3-top.png);}
+
+	.product1_bottom{
+		height: 3815px; 
+		background-image: url(../../images/argos/product_pages/product1-bottom.png);
+	}
+
+	.product2_bottom{
+		height: 5829px; 
+		background-image: url(../../images/argos/product_pages/product2-bottom.png);
+	}
+
+	.product3_bottom{
+		height: 2335px; 
+		background-image: url(../../images/argos/product_pages/product3-bottom.png);
+	}
+
+/* FIT IN CAR */
+	#reserve_container{
+		background-image: url(../../images/argos/reserve_bg.gif);
+		background-repeat: repeat-y;
+		float: right;
+		width: 470px;
+		margin-right: 38px;
+		display: none;
+	}
+
+	.fit_in_car_btn{
+		color: white;
+		font-weight: bold;
+		font-size: 15px;
+		padding: 5px;
+		text-align: center;
+		border-radius: 2px;
+		border: 1px solid #cccccc;
+		background-color: #94B125;
+		float: right;
+		margin-right: 20px;
+	}
