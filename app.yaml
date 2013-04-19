@@ -1,6 +1,6 @@
 # DEV Config
 application: will-it-fit-in-my-boot
-version: 0-0-7
+version: 0-0-8
 runtime: python
 api_version: 1
 
